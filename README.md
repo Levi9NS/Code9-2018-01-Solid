@@ -6,3 +6,7 @@ The course will end with short introduction into following technologies (that wi
 - ASP.Net Core
 - Web.API Core and 
 - Entity Framework Core
+
+Articles for next courses:
+ - [ASP.NET Core MVC with EF Core - tutorial series](https://docs.microsoft.com/en-us/aspnet/core/data/ef-mvc/?view=aspnetcore-2.1)
+ - [Create backend services for native mobile apps with ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/mobile/native-mobile-backend?view=aspnetcore-2.1)

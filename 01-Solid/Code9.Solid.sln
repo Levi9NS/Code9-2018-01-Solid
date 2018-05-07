@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Solid03.LSP", "Solid03.LSP\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Solid04.ISP", "Solid04.ISP\Solid04.ISP.csproj", "{2B56EB87-2DFA-442C-85B4-32C4892D2DD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solid03.LSP.Tests", "Solid03.LSP.Tests\Solid03.LSP.Tests.csproj", "{44ECF74E-BAF7-4255-90FA-4898437E0F69}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Solid03.LSP.Tests", "Solid03.LSP.Tests\Solid03.LSP.Tests.csproj", "{44ECF74E-BAF7-4255-90FA-4898437E0F69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solid05.DIP", "Solid05.DIP\Solid05.DIP.csproj", "{9C861E39-81CB-4C17-9AE2-3335344971E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{44ECF74E-BAF7-4255-90FA-4898437E0F69}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44ECF74E-BAF7-4255-90FA-4898437E0F69}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44ECF74E-BAF7-4255-90FA-4898437E0F69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C861E39-81CB-4C17-9AE2-3335344971E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C861E39-81CB-4C17-9AE2-3335344971E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C861E39-81CB-4C17-9AE2-3335344971E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C861E39-81CB-4C17-9AE2-3335344971E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

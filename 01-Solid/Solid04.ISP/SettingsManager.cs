@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Solid03.LSP
+namespace Solid04.ISP
 {
     public class SettingsManager
     {

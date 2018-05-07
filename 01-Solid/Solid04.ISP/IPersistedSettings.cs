@@ -1,4 +1,4 @@
-﻿namespace Solid03.LSP
+﻿namespace Solid04.ISP
 {
     public interface IPersistedSettings
     {

@@ -2,7 +2,7 @@
 
 namespace Solid04.ISP
 {
-    public class UserAccessSettings : IPersistedSettings
+    public class UserAccessSettings : ILoad
     {
         public bool AreUsersAbleToChangeUsername { get; set; }
         public bool AreUsersAbleToResetPassword { get; set; }
@@ -13,10 +13,6 @@ namespace Solid04.ISP
             AreUsersAbleToChangeUsername = false;
             AreUsersAbleToResetPassword = true;
         }
-
-        public void Persist()
-        {
-            throw new NotSupportedException("User permissions cannot be changed");
-        }
+        
     }
 }

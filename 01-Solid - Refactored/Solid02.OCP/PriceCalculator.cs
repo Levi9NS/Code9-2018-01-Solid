@@ -15,7 +15,8 @@ namespace Solid02.OCP
 
             foreach (var item in orderItems)
             {
-                IDiscountCalculator discountCalculator = DiscountFactory.CreateDiscountCalculator(item.DiscountType);
+                IDiscountCalculator discountCalculator 
+                    = DiscountFactory.CreateDiscountCalculator(item.DiscountType);
                 double itemPrice = discountCalculator.GetDiscountedPrice(item);
                 totalPrice += itemPrice;
             }

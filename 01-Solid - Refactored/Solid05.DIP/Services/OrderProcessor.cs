@@ -27,9 +27,7 @@ namespace Solid05.DIP.Services
         public async Task<bool> ProcessOrder(OrderModel order)
         {
             double totalPrice = _priceCalculator.CalculateTotalPrice(order);
-
             int ccResponseId = await _ccClient.ChargeCreditCard(order.Orderer, totalPrice);
-
             try
             {
                 _orderProcessorStore.ProcessOrderInStorage(order);
@@ -39,9 +37,7 @@ namespace Solid05.DIP.Services
                 await _ccClient.CancelCreditCardCharge(ccResponseId);
                 throw;
             }
-
             await _notificationService.NotifyClientAboutOrder(order, totalPrice);
-
             return true;
         }
     }

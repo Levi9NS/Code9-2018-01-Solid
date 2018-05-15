@@ -4,17 +4,22 @@ namespace Solid04.ISP
 {
     public class SettingsManager
     {
-        private readonly List<IPersistedSettings> _settings = new List<IPersistedSettings>();
+        private readonly List<IPersist> _persistList = new List<IPersist>();
+        private readonly List<ILoad> _loadList = new List<ILoad>();
 
         public SettingsManager()
         {
-            _settings.Add(new LoggingSettings());
-            _settings.Add(new UserAccessSettings());
+            var loggingSettings = new LoggingSettings();
+            var userAccessSettings = new UserAccessSettings();
+
+            _persistList.Add(loggingSettings);
+            _loadList.Add(loggingSettings);
+            _loadList.Add(userAccessSettings);
         }
 
         public void LoadAll()
         {
-            foreach (var settings in _settings)
+            foreach (var settings in _loadList)
             {
                 settings.Load();
             }
@@ -22,7 +27,7 @@ namespace Solid04.ISP
 
         public void PersistAll()
         {
-            foreach (var settings in _settings)
+            foreach (var settings in _persistList)
             {
                 settings.Persist();
             }

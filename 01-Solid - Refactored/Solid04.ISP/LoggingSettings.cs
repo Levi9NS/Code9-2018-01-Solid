@@ -1,6 +1,6 @@
 ﻿namespace Solid04.ISP
 {
-    public class LoggingSettings: IPersistedSettings
+    public class LoggingSettings: ILoad, IPersist
     {
         public string LogFilePath { get; set; }
         public bool LogSensitiveData { get; set; }

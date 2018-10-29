@@ -7,21 +7,21 @@ namespace Solid03.LSP.Tests
         [Fact]
         public void RectangleAreaCalculation()
         {
-            Rectangle r1 = new Rectangle
+            RectangleBase s1 = new Rectangle()
             {
                 A = 4,
                 B = 5
             };
 
-            Assert.Equal(20, r1.Area);
+            Assert.Equal(20, s1.Area());
 
-            Rectangle r2 = new Square
+            RectangleBase s2 = new Square()
             {
-                A = 4,
-                B = 5
+                Side = 4
             };
 
-            Assert.Equal(20, r2.Area); // fails, area is 25
+            Assert.Equal(16, s2.Area());
         }
+
     }
 }

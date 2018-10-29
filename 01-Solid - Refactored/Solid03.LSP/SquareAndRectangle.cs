@@ -6,28 +6,30 @@ using System.Threading.Tasks;
 
 namespace Solid03.LSP
 {
-    public class Rectangle
+    public class Rectangle : RectangleBase
     {
-        public virtual int A { get; set; }
-        public virtual int B { get; set; }
+        public int A { get; set; }
+        public int B { get; set; }
 
-        public int Area => A * B;
-    }
-
-    public class Square : Rectangle
-    {
-        private int _side;
-
-        public override int A
+        public override int Area()
         {
-            get => _side;
-            set => _side = value;
-        }
-
-        public override int B
-        {
-            get => _side;
-            set => _side = value;
+            return A * B;
         }
     }
+
+    public class Square : RectangleBase
+    {
+        public int Side { get; set; }
+
+        public override int Area()
+        {
+            return Side * Side;
+        }
+    }
+
+    public abstract class RectangleBase
+    {
+        public abstract int Area();
+    }
+
 }
